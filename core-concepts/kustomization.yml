@@ -1,0 +1,8 @@
+resources:
+  - mynamespace-nginx.yml
+  - busybox-env.yml
+#  - myrq.yml
+  - nginx-expose80.yml
+  - tmp-busybox-wget.yml
+  - hello-world.yml
+  - nginx-env.yml

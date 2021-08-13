@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: two-busybox
+spec:
+  containers:
+    - name: alpha
+      image: busybox:latest
+      command: ["sh", "-c"]
+      args:
+        - |
+          echo hello
+          sleep 3600
+    - name: bravo
+      image: busybox:latest
+      command: ["sh", "-c"]
+      args:
+        - |
+          echo hello
+          sleep 3600

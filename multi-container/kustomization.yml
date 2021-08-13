@@ -1,1 +1,3 @@
 resources:
+#  - two-busybox.yml
+  - nginx-pod.yml

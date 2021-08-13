@@ -1,0 +1,9 @@
+---
+resources:
+#  - nginx-pods.yml
+#  - nginx-dep.yml 
+#  - autoscale.yml
+#  - pi-job.yml
+#  - busybox-job.yml
+  - cronjob-busybox.yml
+  

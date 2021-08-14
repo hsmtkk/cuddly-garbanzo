@@ -1,0 +1,28 @@
+configMapGenerator:
+configMapGenerator:
+  - name: config
+    literals:
+      - foo=lala
+      - foo2=lolo
+  - name: config2
+    files:
+      - config.txt
+  - name: config3
+    envs:
+      - config.env
+  - name: options
+    literals:
+      - var5=val5
+  - name: anotherone
+    literals:
+      - var6=val6
+      - var7=val7
+resources:
+  - nginx-pod.yml
+secretGenerator:
+  - name: mysecret
+    literals:
+      - password=mypass
+  - name: mysecret2
+    files:
+      - username
